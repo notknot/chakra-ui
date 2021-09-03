@@ -36,5 +36,8 @@
   "bugs": {
     "url": "https://github.com/notknot/chakra-ui/issues"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.32.0"
+  }
 }

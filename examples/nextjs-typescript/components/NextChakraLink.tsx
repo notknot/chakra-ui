@@ -23,7 +23,7 @@ export const NextChakraLink = ({
 }: NextChakraLinkProps) => {
   return (
     <NextLink
-      passHref={true}
+      passHref
       href={href}
       as={as}
       replace={replace}

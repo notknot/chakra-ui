@@ -8,9 +8,9 @@ import {
   Image,
   Text,
 } from "@chakra-ui/react"
+import { GetStaticProps, GetStaticPaths } from "next"
 import { Layout } from "../../components/Layout"
 import { properties } from "../../utils/sample-data"
-import { GetStaticProps, GetStaticPaths } from "next"
 import { Property } from "../../interfaces/Property"
 import { Chakra } from "../../Chakra"
 

@@ -7,9 +7,8 @@ import {
   Image,
 } from "@chakra-ui/react"
 import { StarIcon } from "@chakra-ui/icons"
-import { Property } from "../interfaces/Property"
 
-export const PropertySummary = ({ property }: { property: Property }) => {
+export const PropertySummary = ({ property }) => {
   const textColor = useColorModeValue("gray.600", "gray.400")
   return (
     <Box maxW="sm" borderWidth="1px" borderRadius="lg" overflow="hidden">

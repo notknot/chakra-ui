@@ -4,11 +4,7 @@ import { Layout } from "../components/Layout"
 import { Logo } from "../components/Logo"
 import { NextChakraLink } from "../components/NextChakraLink"
 
-interface IndexProps {
-  cookies?: string
-}
-
-const IndexPage = ({ cookies }: IndexProps) => (
+const IndexPage = ({ cookies }) => (
   <Chakra cookies={cookies}>
     <Layout title="Next.js + TypeScript example">
       <Box textAlign="center" fontSize="xl">

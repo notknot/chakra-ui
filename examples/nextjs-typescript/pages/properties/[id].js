@@ -8,13 +8,11 @@ import {
   Image,
   Text,
 } from "@chakra-ui/react"
-import { GetStaticProps, GetStaticPaths } from "next"
 import { Layout } from "../../components/Layout"
 import { properties } from "../../utils/sample-data"
-import { Property } from "../../interfaces/Property"
 import { Chakra } from "../../Chakra"
 
-const PropertyPage = ({ item }: { item: Property }) => (
+const PropertyPage = ({ item }) => (
   <Chakra>
     <Layout title={`Next.js + TypeScript | Viewing ${item.title}`}>
       <Grid templateColumns={["1fr", "1fr", "2fr 1fr"]} gap={[0, 2, 10]}>
@@ -57,7 +55,7 @@ const PropertyPage = ({ item }: { item: Property }) => (
   </Chakra>
 )
 
-export const getStaticPaths: GetStaticPaths = async () => {
+export const getStaticPaths = async () => {
   // Get the paths we want to pre-render based on properties
   const paths = properties.map((property) => ({
     params: { id: property.id },
@@ -68,7 +66,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   return { paths, fallback: false }
 }
 
-export const getStaticProps: GetStaticProps = async ({ params }) => {
+export const getStaticProps = async ({ params }) => {
   try {
     const id = params?.id
     const item = properties.find((data) => data.id === id)

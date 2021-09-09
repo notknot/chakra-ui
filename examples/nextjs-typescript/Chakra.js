@@ -6,12 +6,7 @@ import {
 import { GetServerSidePropsContext } from "next"
 import { ReactNode } from "react"
 
-interface ChakraProps {
-  cookies?: string
-  children: ReactNode
-}
-
-export const Chakra = ({ children, cookies }: ChakraProps) => {
+export const Chakra = ({ children, cookies }) => {
   return (
     <ChakraProvider
       colorModeManager={
@@ -23,11 +18,7 @@ export const Chakra = ({ children, cookies }: ChakraProps) => {
   )
 }
 
-export type ServerSideProps<T> = { props: T } | Promise<{ props: T }>
-
-export function getServerSideProps({
-  req,
-}: GetServerSidePropsContext): ServerSideProps<{ cookies?: string }> {
+export function getServerSideProps({ req }) {
   return {
     props: {
       cookies: req.headers.cookie ?? "",

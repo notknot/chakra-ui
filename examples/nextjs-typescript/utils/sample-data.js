@@ -1,5 +1,4 @@
 import faker from "faker"
-import { Property } from "../interfaces/Property"
 
 //  Set seed so generated data is always the same
 faker.seed(4)
@@ -62,6 +61,6 @@ const generateProperty = () => {
   }
 }
 
-export const properties: Property[] = Array(NO_PROPERTIES_TO_GENERATE)
+export const properties = Array(NO_PROPERTIES_TO_GENERATE)
   .fill("")
   .map(generateProperty)

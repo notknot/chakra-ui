@@ -1,16 +1,11 @@
-import {
-  keyframes,
-  IconProps,
-  chakra,
-  usePrefersReducedMotion,
-} from "@chakra-ui/react"
+import { keyframes, chakra, usePrefersReducedMotion } from "@chakra-ui/react"
 
 const spin = keyframes`
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 `
 
-export const Logo = (props: IconProps) => {
+export const Logo = (props) => {
   const prefersReducedMotion = usePrefersReducedMotion()
 
   const animation = prefersReducedMotion

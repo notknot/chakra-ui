@@ -5,11 +5,7 @@ import { PropertySummary } from "../../components/PropertySummary"
 import { NextChakraLink } from "../../components/NextChakraLink"
 import { Chakra } from "../../Chakra"
 
-interface PropertiesProps {
-  cookies?: string
-}
-
-const PropertiesPage = ({ cookies }: PropertiesProps) => (
+const PropertiesPage = ({ cookies }) => (
   <Chakra cookies={cookies}>
     <Layout title="Next.js + TypeScript example | View properties">
       <Heading mb={4}>Available this weekend</Heading>

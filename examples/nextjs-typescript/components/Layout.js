@@ -1,19 +1,10 @@
-import { ReactNode } from "react"
 import Head from "next/head"
 import { Container, Flex, Heading, HStack } from "@chakra-ui/react"
 import { ColorModeSwitcher } from "./ColorModeSwitcher"
 import { Logo } from "./Logo"
 import { NextChakraLink } from "./NextChakraLink"
 
-type Props = {
-  children?: ReactNode
-  title?: string
-}
-
-export const Layout = ({
-  children,
-  title = "This is the default title",
-}: Props) => (
+export const Layout = ({ children, title = "This is the default title" }) => (
   <div>
     <Head>
       <title>{title}</title>

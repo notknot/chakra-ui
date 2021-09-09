@@ -6,6 +6,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
+    "lint": "next lint",
     "type-check": "tsc"
   },
   "dependencies": {
@@ -29,11 +30,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/chakra-ui/chakra-ui.git",
+    "url": "https://github.com/notknot/chakra-ui.git",
     "directory": "examples/nextjs-typescript"
   },
   "bugs": {
-    "url": "https://github.com/chakra-ui/chakra-ui/issues"
+    "url": "https://github.com/notknot/chakra-ui/issues"
   },
   "license": "MIT"
 }

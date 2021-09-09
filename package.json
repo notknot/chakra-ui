@@ -30,11 +30,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/notknot/chakra-ui.git",
+    "url": "https://github.com/notknot/chakra-ui-real-estate-example.git",
     "directory": "examples/nextjs-typescript"
   },
   "bugs": {
-    "url": "https://github.com/notknot/chakra-ui/issues"
+    "url": "https://github.com/notknot/chakra-ui-real-estate-example/issues"
   },
   "license": "MIT",
   "devDependencies": {

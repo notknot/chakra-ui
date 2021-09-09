@@ -12,7 +12,7 @@ const IndexPage = ({ cookies }) => (
           <VStack spacing={8}>
             <Logo h="40vmin" pointerEvents="none" />
             <Text>
-              Edit <Code fontSize="xl">pages/index.tsx</Code> and save to
+              Edit <Code fontSize="xl">pages/index.js</Code> and save to
               reload.
               <br />
               <br />
